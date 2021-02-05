@@ -32,6 +32,8 @@ Este es el bloque de codigo que se genera por cada imagen, puedes cambiar las ca
 <script src="Justified_Gallery.js"></script>
 ```
 
+Puedes encontrar la muestra del proyecto aqui [Justified Gallery](https://poncegl.github.io/Gallery-justified-vanilla-JavaScript/)
+
 Genial!! Puedes agregar un numero indeterminado de imagenes, un consejo, intercala entre imagnes en formato vertical y formato horizontal, exito!!!
 
-[@poncegl :fa-twitter-square:](https://twitter.com/poncegl)
+[@poncegl](https://twitter.com/poncegl)
