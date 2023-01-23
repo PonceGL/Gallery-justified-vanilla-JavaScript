@@ -10,16 +10,21 @@ import { justified } from "./justified";
  * *@param {ImageOpject[]} images - ImageOpject[]
  */
 export function gallery(options: Options) {
-  document.querySelector<HTMLDivElement>("#justified_gallery")!.innerHTML = `
-      <div class="justified_gallery_3ixTffW4" id="justified_gallery_3ixTffW4"></div>
-  `;
+  const content = document.querySelector<HTMLDivElement>("#justified_gallery");
+  if (content) {
+    content.innerHTML = `
+    <div class="justified_gallery_3ixTffW4" id="justified_gallery_3ixTffW4"></div>
+`;
 
-  const galleryOptions: GalleryOptions = {
-    element: document.querySelector<HTMLDivElement>(
-      "#justified_gallery_3ixTffW4"
-    )!,
-    ...options,
-  };
+    const galleryOptions: GalleryOptions = {
+      element: document.querySelector<HTMLDivElement>(
+        "#justified_gallery_3ixTffW4"
+      )!,
+      ...options,
+    };
 
-  justified(galleryOptions);
+    justified(galleryOptions);
+  } else {
+    throw new Error("missing div with id 'justified_gallery'.");
+  }
 }

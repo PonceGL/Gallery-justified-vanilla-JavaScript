@@ -170,3 +170,4 @@ export const justified = (otions: GalleryOptions) => {
   );
   justifiedGallery.addImages(images);
 };
+
