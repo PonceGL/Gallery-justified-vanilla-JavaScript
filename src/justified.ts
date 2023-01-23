@@ -1,5 +1,5 @@
 import { ValidationsTypes } from "./validations";
-import { GalleryOptions, ImageOpject, GalleryItem } from "./types";
+import { GalleryOptions, ImageOpject, GalleryItem } from "./interfaces";
 import { Lighbox } from "./lighbox";
 
 class JustifiedGallery {

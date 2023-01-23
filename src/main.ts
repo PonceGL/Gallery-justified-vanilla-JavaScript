@@ -1,17 +1,25 @@
-import { Options } from "./types";
-import images from "./data/images.json";
+import { GalleryOptions, Options } from "./interfaces";
+export type { Options, ImageOpject } from "./interfaces";
 import "./styles/style.css";
-import { gallery } from ".";
+import { justified } from "./justified";
 
-(function () {
-  const options: Options = {
-    images: images,
-    showTitle: true,
-    // centerTitle: true,
-    showDescription: true,
-    // centerDescription: true,
-    // separation: 10,
+/**
+ * Take an options object, and then create a div with an id of justified_gallery_3ixTffW4,
+ * where the justified gallery will be located
+ * @param {Options} options - Options
+ * *@param {ImageOpject[]} images - ImageOpject[]
+ */
+export function gallery(options: Options) {
+  document.querySelector<HTMLDivElement>("#justified_gallery")!.innerHTML = `
+      <div class="justified_gallery_3ixTffW4" id="justified_gallery_3ixTffW4"></div>
+  `;
+
+  const galleryOptions: GalleryOptions = {
+    element: document.querySelector<HTMLDivElement>(
+      "#justified_gallery_3ixTffW4"
+    )!,
+    ...options,
   };
 
-  gallery(options);
-})();
+  justified(galleryOptions);
+}

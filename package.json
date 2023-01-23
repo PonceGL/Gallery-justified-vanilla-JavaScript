@@ -1,15 +1,35 @@
 {
-  "name": "gallery-justified",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "vanilla-justified-gallery",
+  "private": false,
+  "version": "1.0.4",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "yarn clean && tsc && yarn copy-files",
+    "clean": "rm -rf ./dist",
+    "copy-files": "mkdir ./dist/styles && cp ./src/styles/style.css ./dist/styles"
   },
   "devDependencies": {
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0"
-  }
+    "typescript": "^4.9.3"
+  },
+  "description": "Esta es una galeria que ajusta las imagenes sin importar su relación de aspecto, para que se justifique respecto a los bordes. Sin frameworks, sin librerias externas.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PonceGL/Gallery-justified-vanilla-JavaScript.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "Vanilla",
+    "JavaScript"
+  ],
+  "author": "PonceGL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PonceGL/Gallery-justified-vanilla-JavaScript/issues"
+  },
+  "homepage": "https://github.com/PonceGL/Gallery-justified-vanilla-JavaScript#readme"
 }

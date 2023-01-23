@@ -1,4 +1,4 @@
-import { Controls, GalleryItem } from "./types";
+import { Controls, GalleryItem } from "./interfaces";
 
 export interface LighboxTemplate {
   create(
