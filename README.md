@@ -17,12 +17,12 @@ Este es el bloque de codigo que se genera por cada imagen, puedes cambiar las ca
 
 ```javascript
 <div class="Gallery_item">
-        <img class="Gallery_item_image" src=${image} alt="image${i}" />
-        <a class="Gallery_item_info" href="#">
-            <h4 class="Gallery_item_info_name">Image ${i} </h4>
-            <p class="Gallery_item_info_description">Gallery VanilaJS</p>
-        </a>
-      </div>
+  <img class="Gallery_item_image" src=${image} alt="image${i}" />
+  <a class="Gallery_item_info" href="#">
+      <h4 class="Gallery_item_info_name">Image ${i} </h4>
+      <p class="Gallery_item_info_description">Gallery VanilaJS</p>
+  </a>
+</div>
 ```
 
 ######No olvides importar el escrip y el archivo css
